@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Employee Registration Form</title>
+</head>
+<body>
+
+<h2>Employee Registration Form</h2>
+
+<form>
+    Employee Name:
+    <input type="text" name="ename"><br><br>
+
+    Employee ID:
+    <input type="text" name="eid"><br><br>
+
+    Department:
+    <input type="text" name="dept"><br><br>
+
+    Mobile Number:
+    <input type="text" name="mobile"><br><br>
+
+    City:
+    <select name="city">
+        <option>Chennai</option>
+        <option>Bangalore</option>
+        <option>Hyderabad</option>
+    </select><br><br>
+
+    <input type="submit" value="Register">
+    <input type="reset" value="Clear">
+</form>
+
+</body>
+</html>
