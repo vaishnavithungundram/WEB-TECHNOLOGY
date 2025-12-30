@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS Box Model Demo</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #43cea2, #185a9d);
+            padding: 40px;
+        }
+
+        h1 {
+            text-align: center;
+            color: white;
+            text-shadow: 2px 2px black;
+        }
+
+        .box {
+            width: 300px;
+
+            /* CONTENT */
+            background-color: #fff;
+
+            /* PADDING */
+            padding: 20px;
+
+            /* BORDER */
+            border: 8px solid #ff5722;
+
+            /* MARGIN */
+            margin: 50px auto;
+
+            border-radius: 15px;
+            box-shadow: 0px 0px 20px black;
+            text-align: center;
+        }
+
+        .box p {
+            color: #333;
+            font-size: 18px;
+        }
+
+        .labels {
+            color: yellow;
+            text-align: center;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+
+<h1>CSS Box Model Example</h1>
+
+<p class="labels">Margin → Border → Padding → Content</p>
+
+<div class="box">
+    <p>
+        This is the CONTENT area of the box model.<br><br>
+        Padding creates space inside the border.<br>
+        Border surrounds the padding and content.<br>
+        Margin creates space outside the box.
+    </p>
+</div>
+
+</body>
+</html>
