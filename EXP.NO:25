@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>String Object Demo</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+      color: #333;
+      text-align: center;
+      padding: 40px;
+    }
+    h1 {
+      color: #fff;
+      text-shadow: 2px 2px 5px #000;
+    }
+    .container {
+      background: #fff;
+      border-radius: 12px;
+      padding: 20px;
+      margin: 20px auto;
+      width: 60%;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    }
+    input, button {
+      padding: 10px;
+      margin: 8px;
+      border-radius: 8px;
+      border: none;
+      font-size: 14px;
+    }
+    input {
+      border: 2px solid #ff6f61;
+    }
+    button {
+      background: #ff6f61;
+      color: #fff;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+    button:hover {
+      background: #ff3b2e;
+    }
+    .result {
+      margin-top: 15px;
+      font-weight: bold;
+      color: #2c3e50;
+    }
+  </style>
+</head>
+<body>
+  <h1>🎨 String Object Operations Demo</h1>
+  <div class="container">
+    <label>Enter a string: </label>
+    <input type="text" id="mainString" placeholder="Type your string here">
+    <br>
+    <label>Index: </label>
+    <input type="number" id="index" placeholder="Enter index">
+    <br>
+    <button onclick="getChar()">Get Character at Index</button>
+    <button onclick="getUnicode()">Get Unicode at Index</button>
+    <button onclick="joinStrings()">Join Strings</button>
+    <button onclick="unicodeToChar()">Unicode ➡️ String</button>
+    <button onclick="toUpperCase()">Convert to UPPERCASE</button>
+    <div class="result" id="output"></div>
+  </div>
+
+  <script>
+    function getChar() {
+      let str = document.getElementById("mainString").value;
+      let idx = document.getElementById("index").value;
+      document.getElementById("output").innerText = 
+        "Character at index " + idx + " ➡️ " + str.charAt(idx);
+    }
+
+    function getUnicode() {
+      let str = document.getElementById("mainString").value;
+      let idx = document.getElementById("index").value;
+      document.getElementById("output").innerText = 
+        "Unicode at index " + idx + " ➡️ " + str.charCodeAt(idx);
+    }
+
+    function joinStrings() {
+      let str1 = document.getElementById("mainString").value;
+      let str2 = prompt("Enter another string to join:");
+      let joined = str1.concat(" ", str2);
+      document.getElementById("output").innerText = 
+        "Joined String ➡️ " + joined;
+    }
+
+    function unicodeToChar() {
+      let code = prompt("Enter a Unicode value (e.g. 65):");
+      let char = String.fromCharCode(code);
+      document.getElementById("output").innerText = 
+        "Unicode " + code + " ➡️ " + char;
+    }
+
+    function toUpperCase() {
+      let str = document.getElementById("mainString").value;
+      document.getElementById("output").innerText = 
+        "Uppercase ➡️ " + str.toUpperCase();
+    }
+  </script>
+</body>
+</html>
