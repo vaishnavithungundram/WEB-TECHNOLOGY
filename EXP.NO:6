@@ -1,0 +1,41 @@
+!DOCTYPE html>
+<html>
+<head>
+    <title>Class Selector Demo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="header">
+    <h1>🌟 CSS Class Selector Example 🌟</h1>
+    <p>External Style Sheet Demonstration</p>
+</header>
+
+<section class="section-box">
+    <h2 class="title">About HTML</h2>
+    <p class="content">
+        HTML is used to create the structure of web pages using various elements.
+    </p>
+</section>
+
+<section class="section-box">
+    <h2 class="title">About CSS</h2>
+    <p class="content">
+        CSS is used to style HTML elements and make web pages colorful and attractive.
+    </p>
+</section>
+
+<section class="section-box">
+    <h2 class="title">About JavaScript</h2>
+    <p class="content">
+        JavaScript is used to add interactivity and dynamic behavior to web pages.
+    </p>
+</section>
+
+<footer class="footer">
+    © 2025 Web Design | Using External CSS
+</footer>
+
+</body>
+</html>
