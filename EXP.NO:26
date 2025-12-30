@@ -1,0 +1,88 @@
+     HELLO WORLD ,
+THIS IS DHARSHINI RAMACHNADRAN ,
+   HAPPY TO MEET YOU ALL ❤️
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Website Visitor Counter</title>
+
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            font-family: 'Segoe UI', sans-serif;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .card {
+            background: rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            padding: 40px 60px;
+            text-align: center;
+            color: #fff;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+            animation: fadeIn 1.2s ease;
+        }
+
+        h1 {
+            font-size: 32px;
+            margin-bottom: 10px;
+        }
+
+        .count {
+            font-size: 48px;
+            font-weight: bold;
+            color: #ffeb3b;
+            margin: 20px 0;
+            animation: pulse 1.5s infinite;
+        }
+
+        p {
+            font-size: 16px;
+            opacity: 0.9;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.08); }
+            100% { transform: scale(1); }
+        }
+
+        .footer {
+            margin-top: 20px;
+            font-size: 13px;
+            opacity: 0.8;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="card">
+        <h1>🌐 Welcome to Our Website</h1>
+        <p>Total Visitors So Far</p>
+
+        <div class="count"28 </div>
+
+        <div class="footer">
+            Thank you for visiting 💙
+        </div>
+    </div>
+</body>
+</html>
