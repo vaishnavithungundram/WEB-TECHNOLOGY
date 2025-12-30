@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Modern Multimedia</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: "Inter", "Segoe UI", Arial;
+      min-height: 100vh;
+      background:
+        linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)),
+        url("https://images.unsplash.com/photo-1500530855697-b586d89ba3ee");
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .glass {
+      width: 520px;
+      padding: 32px;
+      border-radius: 22px;
+      background: rgba(255,255,255,0.15);
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+      border: 1px solid rgba(255,255,255,0.3);
+      box-shadow: 0 30px 60px rgba(0,0,0,0.4);
+      animation: floatIn 1.2s ease;
+      color: white;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 28px;
+      letter-spacing: 1px;
+    }
+
+    h3 {
+      margin: 6px 0 20px;
+      font-weight: normal;
+      opacity: 0.85;
+    }
+
+    .section {
+      margin-top: 24px;
+    }
+
+    audio, video {
+      width: 100%;
+      margin-top: 10px;
+      border-radius: 14px;
+      outline: none;
+      animation: fadeUp 1.6s ease;
+    }
+
+    footer {
+      margin-top: 26px;
+      text-align: center;
+      font-size: 13px;
+      opacity: 0.8;
+    }
+
+    @keyframes floatIn {
+      from { opacity: 0; transform: translateY(40px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <div class="glass">
+
+    <h1>🎧 Multimedia Experience</h1>
+    <h3>Designed by D audio's </h3>
+
+    <div class="section">
+      <strong>🎶 Audio</strong>
+      <audio controls autoplay loop>
+        <source src="sample.mp3" type="audio/mpeg">
+        Audio not supported
+      </audio>
+    </div>
+
+    <div class="section">
+      <strong>🎬 Video</strong>
+      <video controls autoplay loop muted>
+        <source src="sample.mp4" type="video/mp4">
+        Video not supported
+      </video>
+    </div>
+
+    <footer>
+      © 2025 · Multimedia Web Page
+    </footer>
+
+  </div>
+
+</body>
+</html>
