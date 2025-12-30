@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Types Demo</title>
+
+    <!-- External CSS File -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Internal CSS -->
+    <style>
+        section {
+            background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+            padding: 25px;
+            margin: 20px;
+            border-radius: 20px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.3);
+        }
+
+        section h2 {
+            color: #6a1b9a;
+            text-align: center;
+            text-shadow: 0 0 10px white;
+        }
+
+        section p {
+            font-size: 16px;
+            text-align: justify;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header uses EXTERNAL CSS -->
+    <header>
+        🌈 CSS Styling Techniques 🌈
+    </header>
+
+    <!-- Navigation uses EXTERNAL CSS -->
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Gallery</a>
+        <a href="#">Contact</a>
+    </nav>
+
+    <!-- Section uses INTERNAL CSS -->
+    <section>
+        <h2>Internal Style Sheet</h2>
+        <p>
+            This section is styled using <b>Internal CSS</b> defined inside the
+            &lt;style&gt; tag within the HTML document.
+        </p>
+
+        <!-- Inline CSS -->
+        <p style="color: #d50000; font-weight: bold; font-size: 18px;">
+            ⭐ This paragraph uses INLINE CSS ⭐
+        </p>
+
+        <!-- Inline CSS Button -->
+        <button style="
+            background: linear-gradient(to right, #00c853, #b2ff59);
+            color: black;
+            padding: 12px 25px;
+            border: none;
+            border-radius: 25px;
+            font-size: 16px;
+            cursor: pointer;
+            box-shadow: 0 0 15px #00e676;">
+            Click Me
+        </button>
+    </section>
+
+    <!-- Footer uses EXTERNAL CSS -->
+    <footer>
+        © 2025 CSS Demonstration Web Page
+    </footer>
+
+</body>
+</html>
