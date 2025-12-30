@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Relative Positioning Demo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<h1>CSS Relative Positioning</h1>
+
+<div class="parent">
+    <p>Parent Container</p>
+
+    <div class="box">
+        Relative Box
+    </div>
+</div>
+
+</body>
+</html>
