@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colorful Background Page</title>
+    <style>
+        /* Body styling with background image */
+        body {
+            margin: 0;
+            height: 100vh;
+            font-family: 'Arial', sans-serif;
+            background-image: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-align: center;
+        }
+
+        /* Overlay box for color effect */
+        .overlay {
+            background: rgba(255, 105, 180, 0.6); /* Pinkish transparent overlay */
+            padding: 50px 70px;
+            border-radius: 25px;
+            box-shadow: 0 0 25px rgba(0,0,0,0.6);
+            animation: float 3s ease-in-out infinite;
+        }
+
+        /* Heading style */
+        h1 {
+            font-size: 3em;
+            margin: 0 0 20px 0;
+            text-shadow: 2px 2px #000;
+        }
+
+        /* Paragraph style */
+        p {
+            font-size: 1.3em;
+            margin-bottom: 30px;
+            text-shadow: 1px 1px #000;
+        }
+
+        /* Button styling */
+        .btn {
+            padding: 15px 30px;
+            font-size: 1.2em;
+            font-weight: bold;
+            border: none;
+            border-radius: 15px;
+            background: linear-gradient(45deg, #ff7e5f, #feb47b, #ff7e5f);
+            color: white;
+            cursor: pointer;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .btn:hover {
+            transform: scale(1.1);
+            box-shadow: 0 0 20px rgba(255,255,255,0.7);
+        }
+
+        /* Floating animation for overlay box */
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-15px); }
+        }
+    </style>
+</head>
+<body>
+    <div class="overlay">
+        <h1>Beautiful Background</h1>
+        <p>Enjoy the colorful overlay with a stunning background image!</p>
+        <button class="btn">Explore Now</button>
+    </div>
+</body>
+</html>
