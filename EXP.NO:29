@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>All Background Effects (No Local Files)</title>
+
+<style>
+/* Common section style */
+section {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    font-size: 32px;
+    color: white;
+}
+
+/* 1️⃣ Online Image Background */
+#online {
+    background-image: url("https://images.unsplash.com/photo-1503264116251-35a269479413");
+    background-size: cover;
+    background-position: center;
+}
+
+/* 2️⃣ Multiple Background Images */
+#multiple {
+    background-image:
+        url("https://images.unsplash.com/photo-1496307042754-b4aa456c4a2d"),
+        url("https://images.unsplash.com/photo-1500530855697-b586d89ba3ee");
+    background-size: cover, contain;
+    background-repeat: no-repeat, no-repeat;
+    background-position: center, bottom right;
+}
+
+/* 3️⃣ Animated Gradient Background */
+#animated {
+    background: linear-gradient(270deg, #ff512f, #dd2476, #24c6dc);
+    background-size: 600% 600%;
+    animation: moveBg 10s ease infinite;
+}
+
+@keyframes moveBg {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* 4️⃣ Gradient + Image Combo */
+#gradient {
+    background-image:
+        linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+        url("https://images.unsplash.com/photo-1503264116251-35a269479413");
+    background-size: cover;
+    background-position: center;
+}
+
+/* 5️⃣ Online Video Background */
+#video {
+    position: relative;
+    overflow: hidden;
+}
+
+#video video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#video .content {
+    position: relative;
+    z-index: 1;
+    background: rgba(0,0,0,0.6);
+    padding: 30px;
+    border-radius: 10px;
+}
+</style>
+</head>
+
+<body>
+
+<section id="online">
+    <h1>Online Image Background</h1>
+</section>
+
+<section id="multiple">
+    <h1>Multiple Background Images</h1>
+</section>
+
+<section id="animated">
+    <h1>Animated Gradient Background</h1>
+</section>
+
+<section id="gradient">
+    <h1>Gradient + Image Combo</h1>
+</section>
+
+<section id="video">
+    <video autoplay muted loop>
+        <source src="https://www.w3schools.com/howto/rain.mp4" type="video/mp4">
+    </video>
+
+    <div class="content">
+        <h1>Online Video Background</h1>
+        <p>No local video required</p>
+    </div>
+</section>
+
+</body>
+</html>
