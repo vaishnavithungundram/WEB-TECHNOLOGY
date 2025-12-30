@@ -1,0 +1,61 @@
+!DOCTYPE html>
+<html>
+<head>
+    <title>Float Positioning - Overlapping Elements</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #ff9a9e, #fad0c4);
+            padding: 40px;
+            text-align: center;
+        }
+
+        h1 {
+            color: darkblue;
+            text-shadow: 2px 2px white;
+        }
+
+        .container {
+            width: 500px;
+            height: 300px;
+            margin: auto;
+            position: relative;
+        }
+
+        .box {
+            width: 200px;
+            height: 120px;
+            line-height: 120px;
+            font-size: 22px;
+            font-weight: bold;
+            color: white;
+            border-radius: 15px;
+            box-shadow: 0px 0px 15px black;
+        }
+
+        .box1 {
+            background-color: #ff416c;
+            float: left;
+        }
+
+        .box2 {
+            background-color: #1e90ff;
+            float: left;
+            margin-left: -80px;   /* overlap */
+            margin-top: 50px;
+        }
+    </style>
+</head>
+
+<body>
+
+<h1>CSS Float Overlapping Example</h1>
+
+<div class="container">
+    <div class="box box1">BOX 1</div>
+    <div class="box box2">BOX 2</div>
+</div>
+
+</body>
+</html>
