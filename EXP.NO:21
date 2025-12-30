@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Colorful Frameset Page</title>
+</head>
+
+<frameset rows="18%,64%,18%" border="4" bordercolor="#764ba2">
+
+  <!-- 🌈 HEADER -->
+  <frame srcdoc="
+    <html>
+    <body style='margin:0;
+      background:linear-gradient(90deg,#ff512f,#dd2476);
+      color:white;
+      font-family:Segoe UI, Arial;
+      text-align:center;
+      font-size:28px;
+      letter-spacing:1px;
+      padding:28px;'>
+      ✨ COLORFUL FRAMESET WEBSITE ✨
+    </body>
+    </html>
+  ">
+
+  <!-- 🌟 MIDDLE AREA -->
+  <frameset cols="25%,75%" border="3" bordercolor="#ff512f">
+
+    <!-- 📌 MENU -->
+    <frame srcdoc="
+      <html>
+      <body style='margin:0;
+        background:linear-gradient(to bottom,#43cea2,#185a9d);
+        font-family:Arial;
+        color:white;
+        padding:22px;'>
+        <h3 style='margin-top:0;'>📌 MENU</h3>
+        <hr color='white'>
+        🏠 Home<br><br>
+        📘 About<br><br>
+        🛠 Services<br><br>
+        📞 Contact
+      </body>
+      </html>
+    ">
+
+    <!-- 📄 CONTENT -->
+    <frame srcdoc="
+      <html>
+      <body style='margin:0;
+        background:#ffffff;
+        font-family:Arial;
+        padding:30px;'>
+        <h2 style='color:#dd2476;'>Main Content Area</h2>
+        <p style='font-size:16px; line-height:1.6;'>
+          This attractive webpage is divided into multiple colorful
+          frames using the <b>frameset</b> tag instead of the body tag.
+          Each frame displays independent content.
+        </p>
+        <p style='font-size:26px;'>😀 🚀 🎉 🌈 💡</p>
+      </body>
+      </html>
+    ">
+
+  </frameset>
+
+  <!-- 🔻 FOOTER -->
+  <frame srcdoc="
+    <html>
+    <body style='margin:0;
+      background:linear-gradient(90deg,#141e30,#243b55);
+      color:#f1f1f1;
+      font-family:Arial;
+      text-align:center;
+      font-size:16px;
+      padding:22px;'>
+      © 2025 | Colorful Frameset Layout | Academic Practical
+    </body>
+    </html>
+  ">
+
+</frameset>
+</html>
