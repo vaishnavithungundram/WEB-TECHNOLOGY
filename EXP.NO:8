@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript Number Operations</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #fbc2eb, #a6c1ee);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            background-color: #fff8dc;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0px 0px 20px rgba(0,0,0,0.2);
+            text-align: center;
+            width: 400px;
+        }
+        h1 {
+            color: #ff6f61;
+        }
+        p {
+            font-size: 18px;
+            color: #333;
+            margin: 15px 0;
+        }
+        .output {
+            background-color: #f0f8ff;
+            padding: 10px;
+            border-radius: 8px;
+            color: #00008b;
+            font-weight: bold;
+        }
+        button {
+            margin-top: 15px;
+            padding: 10px 20px;
+            font-size: 16px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            background-color: #ff6f61;
+            color: white;
+            transition: 0.3s;
+        }
+        button:hover {
+            background-color: #ff3b2f;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>JavaScript Number Operations</h1>
+        <p id="exponential" class="output"></p>
+        <p id="decimal" class="output"></p>
+        <p id="toString" class="output"></p>
+        <p id="negInfinity" class="output"></p>
+        <button onclick="performOperations()">Show Results</button>
+    </div>
+
+    <script>
+        function performOperations() {
+            let num = 5.6789;
+
+            // 1. Exponential value
+            let expValue = num.toExponential();
+            document.getElementById('exponential').innerHTML = `Exponential value of ${num}: ${expValue}`;
+
+            // 2. Limit the number of digits after decimal (2 digits)
+            let fixedValue = num.toFixed(2);
+            document.getElementById('decimal').innerHTML = `Value of ${num} with 2 decimal digits: ${fixedValue}`;
+
+            // 3. Convert number to string
+            let strValue = num.toString();
+            document.getElementById('toString').innerHTML = `Number ${num} converted to string: "${strValue}"`;
+
+            // 4. Return negative infinity
+            let negInf = Number.NEGATIVE_INFINITY;
+            document.getElementById('negInfinity').innerHTML = `Negative Infinity: ${negInf}`;
+        }
+    </script>
+</body>
+</html>
