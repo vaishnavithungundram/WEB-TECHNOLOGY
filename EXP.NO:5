@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Employee Registration</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #ff512f, #dd2476);
+            padding: 50px;
+        }
+
+        .form-box {
+            background: white;
+            width: 480px;
+            margin: auto;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0px 0px 20px black;
+        }
+
+        h2 {
+            text-align: center;
+            color: #dd2476;
+        }
+
+        label {
+            font-weight: bold;
+            color: #333;
+        }
+
+        input, textarea, select {
+            width: 100%;
+            padding: 10px;
+            margin: 8px 0 18px 0;
+            border-radius: 8px;
+            border: 1px solid #aaa;
+            font-size: 15px;
+        }
+
+        textarea {
+            resize: none;
+        }
+
+        button {
+            width: 100%;
+            padding: 12px;
+            background-color: #ff512f;
+            color: white;
+            border: none;
+            border-radius: 10px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #dd2476;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="form-box">
+    <h2>Employee Registration Form</h2>
+
+    <form>
+        <label>Employee Name</label>
+        <input type="text" placeholder="Enter Employee Name">
+
+        <label>Employee ID</label>
+        <input type="text" placeholder="Enter Employee ID">
+
+        <label>Address</label>
+        <textarea rows="3" placeholder="Enter Address"></textarea>
+
+        <label>Department</label>
+        <input type="text" placeholder="Enter Department">
+
+        <label>Mobile Number</label>
+        <input type="tel" placeholder="Enter Mobile Number">
+
+        <label>City</label>
+        <select>
+            <option>Select City</option>
+            <option>Chennai</option>
+            <option>Bangalore</option>
+            <option>Hyderabad</option>
+            <option>Coimbatore</option>
+            <option>Pune</option>
+        </select>
+
