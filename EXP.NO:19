@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Job Portal</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #ff512f, #dd2476);
+        }
+
+        header {
+            background-color: #222;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            font-size: 30px;
+            letter-spacing: 2px;
+        }
+
+        nav {
+            background-color: #ffcc00;
+            padding: 12px;
+            text-align: center;
+        }
+
+        nav a {
+            color: black;
+            text-decoration: none;
+            margin: 15px;
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+        nav a:hover {
+            color: red;
+        }
+
+        .container {
+            padding: 30px;
+        }
+
+        .job-card {
+            background-color: white;
+            padding: 20px;
+            margin: 20px auto;
+            width: 70%;
+            border-radius: 15px;
+            box-shadow: 0px 0px 15px black;
+        }
+
+        .job-card h2 {
+            color: #dd2476;
+        }
+
+        .job-card p {
+            font-size: 16px;
+            color: #333;
+        }
+
+        .apply-btn {
+            padding: 10px 20px;
+            background-color: #ff512f;
+            color: white;
+            border: none;
+            border-radius: 10px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .apply-btn:hover {
+            background-color: #dd2476;
+        }
+
+        footer {
+            background-color: #222;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    🌟 Online Job Portal 🌟
+</header>
+
+<nav>
+    <a href="#">Home</a>
+    <a href="#">Jobs</a>
+    <a href="#">Companies</a>
+    <a href="#">Contact</a>
+</nav>
+
+<div class="container">
+
+    <div class="job-card">
+        <h2>Software Engineer</h2>
+        <p><b>Company:</b> Tech Solutions</p>
+        <p><b>Location:</b> Bangalore</p>
+        <p><b>Qualification:</b> B.E / B.Tech</p>
+        <button class="apply-btn">Apply Now</button>
+    </div>
+
+    <div class="job-card">
+        <h2>Web Developer</h2>
+        <p><b>Company:</b> Creative Minds</p>
+        <p><b>Location:</b> Hyderabad</p>
+        <p><b>Qualification:</b> Any Degree</p>
+        <button class="apply-btn">Apply Now</button>
+    </div>
+
+    <div class="job-card">
+        <h2>Data Analyst</h2>
+        <p><b>Company:</b> DataCorp</p>
+        <p><b>Location:</b> Chennai</p>
+        <p><b>Qualification:</b> B.Sc / M.Sc</p>
+        <button class="apply-btn">Apply Now</button>
+    </div>
+
+</div>
+
+<footer>
+    © 2025 Job Portal | Designed using HTML & CSS
+</footer>
+
+</body>
+</html>
