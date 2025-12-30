@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Positioning Example</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>CSS Positioning: Relative vs Absolute</h1>
+
+    <section class="relative-example">
+        <h2>Relative Positioning</h2>
+        <div class="relative-parent">
+            <div class="relative-child">I'm moved relative to myself!</div>
+        </div>
+    </section>
+
+    <section class="absolute-example">
+        <h2>Absolute Positioning</h2>
+        <div class="absolute-parent">
+            <div class="absolute-child">I'm positioned absolutely inside my parent!</div>
+        </div>
+    </section>
+</body>
+</html>
