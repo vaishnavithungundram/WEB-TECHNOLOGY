@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Visitor Counter</title>
+    <style>
+        body {
+            background: linear-gradient(to right, #ff9a9e, #fad0c4);
+            font-family: Verdana;
+            text-align: center;
+        }
+
+        .box {
+            background-color: white;
+            width: 400px;
+            margin: 150px auto;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+        }
+
+        h2 {
+            color: #6a1b9a;
+        }
+
+        .count {
+            font-size: 40px;
+            color: #ff5722;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+<div class="box">
+    <h2>Welcome to Our Website</h2>
+    <p>Total Visitors</p>
+    <div class="count" id="visitorCount"></div>
+</div>
+
+<script>
+    let count = localStorage.getItem("visitors");
+
+    if (count === null) {
+        count = 1;
+    } else {
+        count = Number(count) + 1;
+    }
+
+    localStorage.setItem("visitors", count);
+    document.getElementById("visitorCount").innerHTML = count;
+</script>
+
+</body>
+</html>
