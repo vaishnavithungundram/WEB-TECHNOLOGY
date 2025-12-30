@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Absolute Positioning Demo</title>
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>🌈 Absolute Positioning Example 🌈</h1>
+
+    <!-- Parent container -->
+    <div class="container">
+
+        <!-- First box -->
+        <div class="box box1">
+            Box 1
+        </div>
+
+        <!-- Second box (overlapping) -->
+        <div class="box box2">
+            Box 2
+        </div>
+
+    </div>
+
+    <footer>
+        © 2025 CSS Absolute Positioning
+    </footer>
+
+</body>
+</html>
