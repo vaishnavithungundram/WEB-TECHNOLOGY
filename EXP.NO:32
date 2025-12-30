@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Animated Web Page</title>
+
+    <style>
+        body {
+            background-color: #f0f8ff;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding-top: 100px;
+        }
+
+        /* Animation 1: Fade + Slide */
+        h1 {
+            color: darkblue;
+            animation: slideFade 3s ease-in-out infinite alternate;
+        }
+
+        @keyframes slideFade {
+            from {
+                opacity: 0;
+                transform: translateY(-50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Animation 2: Color change */
+        p {
+            font-size: 18px;
+            animation: colorChange 2s infinite;
+        }
+
+        @keyframes colorChange {
+            0% { color: red; }
+            50% { color: green; }
+            100% { color: blue; }
+        }
+
+        /* Animation 3: Button zoom */
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: orange;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            animation: zoom 1.5s infinite alternate;
+        }
+
+        @keyframes zoom {
+            from { transform: scale(1); }
+            to { transform: scale(1.2); }
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Animated HTML Elements</h1>
+    <p>This text changes color continuously</p>
+    <button>Click Me</button>
+</body>
+</html>
