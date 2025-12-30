@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Essentials</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #89f7fe, #66a6ff);
+            padding: 30px;
+            color: #333;
+        }
+
+        h1 {
+            text-align: center;
+            color: #ff4b1f;
+            text-shadow: 1px 1px #fff;
+        }
+
+        h2 {
+            color: #4b2b7f;
+        }
+
+        ul, ol {
+            background-color: #ffffffcc;
+            padding: 20px;
+            border-radius: 15px;
+            width: 50%;
+            margin: 20px auto;
+            box-shadow: 0 0 15px rgba(0,0,0,0.3);
+        }
+
+        li {
+            padding: 8px 0;
+            font-size: 1.1em;
+        }
+
+        /* Different style for unordered list bullets */
+        ul li {
+            list-style-type: square;
+            color: #ff6f61;
+        }
+
+        /* Different style for ordered list numbers */
+        ol li {
+            list-style-type: decimal;
+            color: #4b7bec;
+        }
+    </style>
+</head>
+<body>
+    <h1>Travel Essentials</h1>
+
+    <h2>Unordered List (Items we carry randomly)</h2>
+    <ul>
+        <li>Clothes</li>
+        <li>Toiletries</li>
+        <li>Mobile Charger</li>
+        <li>Snacks</li>
+        <li>Passport / ID</li>
+        <li>Water Bottle</li>
+    </ul>
+
+    <h2>Ordered List (Items in priority order)</h2>
+    <ol>
+        <li>Passport / ID</li>
+        <li>Money / Credit Cards</li>
+        <li>Clothes</li>
+        <li>Toiletries</li>
+        <li>Mobile Charger</li>
+        <li>Snacks & Water Bottle</li>
+    </ol>
+</body>
+</html>
