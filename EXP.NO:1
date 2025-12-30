@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HTML Header Tag Demo</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #ffecd2, #fcb69f);
+        }
+
+        header {
+            background: linear-gradient(to right, #667eea, #764ba2);
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 36px;
+        }
+
+        header h3 {
+            margin: 10px 0;
+            font-weight: normal;
+        }
+
+        nav a {
+            color: yellow;
+            text-decoration: none;
+            margin: 15px;
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+        nav a:hover {
+            color: #ffcc00;
+        }
+
+        section {
+            padding: 30px;
+            background-color: white;
+            margin: 20px;
+            border-radius: 15px;
+            box-shadow: 0px 0px 15px black;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <!-- Various tags inside header -->
+    <h1>🌟 My Colorful Web Page 🌟</h1>
+    <h3>Using Header, Body and Footer Sections</h3>
+
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Contact</a>
+    </nav>
+
+    <p>Welcome to my website designed using HTML & CSS</p>
+</header>
+
+<section>
+    <h2>Body Section</h2>
+    <p>
+        This is the body part of the web page. It contains the main content of the website.
+        The page is divided into header, body, and footer sections to make it well organized.
+    </p>
+</section>
+
+<footer>
+    © 2025 My Website | Designed using HTML
+</footer>
+
+</body>
+</html>
