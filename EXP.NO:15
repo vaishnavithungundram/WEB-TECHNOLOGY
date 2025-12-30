@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Background Repeat Demo</title>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 40px;
+            font-family: Arial, sans-serif;
+
+            /* Background Image */
+            background-image: url("bg.jpg");
+            background-repeat: repeat;
+            background-size: 150px 150px;
+        }
+
+        .content {
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 30px;
+            border-radius: 15px;
+            width: 70%;
+            margin: auto;
+            box-shadow: 0px 0px 15px black;
+        }
+
+        h1 {
+            color: darkblue;
+            text-align: center;
+        }
+
+        p {
+            font-size: 18px;
+            color: #333;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="content">
+        <h1>Background Repeat Demo</h1>
+
+        <p>
+            This web page demonstrates the use of background image and
+            background-repeat property using CSS.
+        </p>
+
+        <p>
+            The colorful background image repeats both horizontally
+            and vertically to fill the entire page.
+        </p>
+    </div>
+
+</body>
+</html>
