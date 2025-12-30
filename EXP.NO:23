@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Hotel Management</title>
+  <script src="exp23.js"></script>
+</head>
+
+<body style="
+  margin:0;
+  font-family:Segoe UI, Arial;
+  min-height:100vh;
+  background:linear-gradient(135deg,#9f1ac4,#4ba257);
+  display:flex;
+  justify-content:center;
+  align-items:center;
+">
+
+  <div style="
+    background:red;
+    width:380px;
+    padding:25px;
+    border-radius:18px;
+    box-shadow:0 20px 40px rgba(0,0,0,0.25);
+  ">
+
+    <h2 style="text-align:center; color:#764ba2;">
+      🍽 Hotel Menu
+    </h2>
+
+    <form onsubmit="confirmOrder(); return false;">
+
+      <label style="color:#333;">
+        <input type="checkbox" value="Idli"> 🥟 Idli
+      </label><br><br>
+
+      <label>
+        <input type="checkbox" value="Dosa"> 🥞 Dosa
+      </label><br><br>
+
+      <label>
+        <input type="checkbox" value="Fried Rice"> 🍚 Fried Rice
+      </label><br><br>
+
+      <label>
+        <input type="checkbox" value="Paneer Butter Masala"> 🧀 Paneer Butter Masala
+      </label><br><br>
+
+      <button style="
+        width:100%;
+        padding:10px;
+        background:linear-gradient(to right,#ff512f,#dd2476);
+        border:none;
+        border-radius:10px;
+        color:white;
+        font-size:16px;
+        cursor:pointer;
+      ">
+        ✅ Confirm Order
+      </button>
+
+    </form>
+
+    <h3 style="margin-top:20px; color:#667eea;">
+      ✔ Confirmed Dishes
+    </h3>
+
+    <div id="result" style="
+      background:#f7f7ff;
+      padding:12px;
+      border-radius:10px;
+      min-height:50px;
+      color:#333;
+    ">
+    </div>
+
+  </div>
+
+</body>
+</html>
