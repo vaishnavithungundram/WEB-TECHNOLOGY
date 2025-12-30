@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Nearest Odd Number</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #ff6a00, #ee0979);
+            padding: 50px;
+        }
+
+        .box {
+            background: white;
+            width: 450px;
+            margin: auto;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0px 0px 20px black;
+            text-align: center;
+        }
+
+        h1 {
+            color: #ee0979;
+        }
+
+        input {
+            width: 80%;
+            padding: 10px;
+            margin: 15px 0;
+            border-radius: 8px;
+            border: 1px solid #aaa;
+            font-size: 16px;
+        }
+
+        button {
+            padding: 12px 25px;
+            background-color: #ff6a00;
+            color: white;
+            border: none;
+            border-radius: 10px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #ee0979;
+        }
+
+        #result {
+            margin-top: 20px;
+            font-size: 18px;
+            color: darkblue;
+            font-weight: bold;
+        }
+    </style>
+
+    <script>
+        function findNearestOdd() {
+            let num = parseInt(document.getElementById("num").value);
+
+            if (isNaN(num)) {
+                document.getElementById("result").innerHTML = "Please enter a valid number!";
+                return;
+            }
+
+            if (num % 2 !== 0) {
+                document.getElementById("result").innerHTML =
+                    "The number " + num + " is already an ODD number.";
+            } else {
+                let lowerOdd = num - 1;
+                let higherOdd = num + 1;
+
+                document.getElementById("result").innerHTML =
+                    "Nearest odd numbers are: " + lowerOdd + " and " + higherOdd;
+            }
+        }
+    </script>
+</head>
+
+<body>
+
+<div class="box">
+    <h1>Nearest Odd Number</h1>
+
+    <input type="number" id="num" placeholder="Enter a number">
+
+    <br>
+    <button onclick="findNearestOdd()">Find Nearest Odd</button>
+
+    <div id="result"></div>
+</div>
+
+</body>
+</html>
