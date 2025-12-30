@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Modern Emoji Page</title>
+
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: linear-gradient(135deg, #667eea, #764ba2);
+      font-family: Arial, sans-serif;
+    }
+
+    .card {
+      background: white;
+      padding: 30px 40px;
+      border-radius: 20px;
+      box-shadow: 0 15px 40px rgba(0,0,0,0.2);
+      text-align: center;
+    }
+
+    h2 {
+      color: #444;
+      margin-bottom: 20px;
+    }
+
+    .emoji {
+      font-size: 50px;   /* Fixed size */
+      margin: 12px;
+      cursor: pointer;
+      transition: transform 0.3s;
+    }
+
+    .emoji:hover {
+      transform: scale(1.4);
+    }
+  </style>
+</head>
+<body>
+
+  <div class="card">
+    <h2>Emoji Display</h2>
+
+    <span class="emoji">😀</span>
+    <span class="emoji">😍</span>
+    <span class="emoji">🚀</span>
+    <span class="emoji">🎉</span>
+    <span class="emoji">🌈</span>
+  </div>
+
+</body>
+</html>
