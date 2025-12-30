@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Mark List</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #ff9a9e, #fad0c4);
+            padding: 40px;
+        }
+
+        h1 {
+            text-align: center;
+            color: darkblue;
+            text-shadow: 2px 2px white;
+        }
+
+        table {
+            width: 80%;
+            margin: auto;
+            border-collapse: collapse;
+            background-color: white;
+            box-shadow: 0px 0px 20px black;
+        }
+
+        th {
+            background-color: #6a11cb;
+            color: white;
+            padding: 12px;
+            font-size: 18px;
+        }
+
+        td {
+            padding: 10px;
+            text-align: center;
+            font-size: 16px;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        tr:hover {
+            background-color: #ffecd2;
+        }
+
+        caption {
+            caption-side: bottom;
+            padding: 10px;
+            font-style: italic;
+            color: darkred;
+        }
+    </style>
+</head>
+
+<body>
+
+<h1>Class Test Mark List</h1>
+
+<table border="1">
+    <tr>
+        <th>Roll No</th>
+        <th>Name</th>
+        <th>Maths</th>
+        <th>Science</th>
+        <th>English</th>
+        <th>Total</th>
+    </tr>
+
+    <tr>
+        <td>101</td>
+        <td>Anu</td>
+        <td>85</td>
+        <td>78</td>
+        <td>88</td>
+        <td>251</td>
+    </tr>
+
+    <tr>
+        <td>102</td>
+        <td>Rahul</td>
+        <td>90</td>
+        <td>82</td>
+        <td>85</td>
+        <td>257</td>
+    </tr>
+
+    <tr>
+        <td>103</td>
+        <td>Priya</td>
+        <td>88</td>
+        <td>90</td>
+        <td>92</td>
+        <td>270</td>
+    </tr>
+
+    <tr>
+        <td>104</td>
+        <td>Kiran</td>
+        <td>76</td>
+        <td>80</td>
+        <td>70</td>
+        <td>226</td>
+    </tr>
+
+    <caption>Prepared using HTML Table Properties</caption>
+</table>
+
+</body>
+</html>
